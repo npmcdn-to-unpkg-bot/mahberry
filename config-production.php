@@ -11,7 +11,7 @@ return [
      *
      */
 
-    'base_url' => 'http://mahberry.com',
+    'base_url' => 'http://themsaid.com/mahberry',
 
     /**
      * --------------------------------------------------------------------------
