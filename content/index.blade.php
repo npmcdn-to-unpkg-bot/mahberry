@@ -17,7 +17,7 @@
 <![endif]-->
 
 <div style="text-align: center">
-    <img src="@url('/assets/mahberry.png')" style="max-width: 700px">
+    <img src="@url('assets/mahberry.png')" style="max-width: 700px">
 </div>
 
 </body>
