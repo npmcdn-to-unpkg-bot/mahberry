@@ -1,21 +1,38 @@
-<!doctype html>
-<html class="no-js" lang="">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please
-    <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
+@extends('_includes.base')
 
-<div style="text-align: center">
-    <img src="@url('assets/mahberry.png')" style="max-width: 700px">
-</div>
+@section('body')
+    <?php
+    $products = (new \Illuminate\Filesystem\Filesystem())->directories(
+            getcwd().'/content/raw_products'
+    );
+    ?>
 
-</body>
-</html>
+    <div class="container">
+
+        <div class="row">
+
+            @foreach($products as $product)
+                <div class="col-md-3 product">
+                    <?php
+                    $textFile = file_get_contents((new \Illuminate\Filesystem\Filesystem())->glob($product.'/*.txt')[0]);
+                    $title = str_replace('#', '', strtok($textFile, "\n"));
+                    $firstImage = (new \Illuminate\Filesystem\Filesystem())->glob($product.'/*.jpg')[0];
+                    $imageURL = str_replace(getcwd().'/content/raw_products/', '', $firstImage);
+                    ?>
+
+
+                    <a href="#">
+                        <div class="imgContainer">
+                            <img src="@url('raw_products/'.$imageURL)" alt="{{$title}}">
+                        </div>
+                        <h5>{{$title}}</h5>
+                    </a>
+
+                </div>
+            @endforeach
+
+        </div>
+    </div>
+
+
+@stop
