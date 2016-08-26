@@ -28,8 +28,42 @@
     </p>
 </header>
 
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.css" media="screen">
+
+    <style>
+        .carousel {
+            background: #EEE;
+        }
+
+        .carousel-cell {
+            width: 100%;
+            margin-right: 10px;
+            background: #8C8;
+            border-radius: 5px;
+            counter-increment: carousel-cell;
+        }
+    </style>
+
     
     <div class="container">
+
+        <div class="carousel m-b-100" data-flickity='{ "wrapAround": true, "autoPlay": true }'>
+                            <div class="carousel-cell">
+                    <img src="/slider/1.jpg">
+                </div>
+                            <div class="carousel-cell">
+                    <img src="/slider/2.jpg">
+                </div>
+                            <div class="carousel-cell">
+                    <img src="/slider/3.jpg">
+                </div>
+                            <div class="carousel-cell">
+                    <img src="/slider/4.jpg">
+                </div>
+                            <div class="carousel-cell">
+                    <img src="/slider/5.jpg">
+                </div>
+                    </div>
 
         <div class="row">
 
@@ -202,7 +236,7 @@
         </div>
     </div>
 
-
+    <script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 
 <footer>
     <div class="container text-center">
