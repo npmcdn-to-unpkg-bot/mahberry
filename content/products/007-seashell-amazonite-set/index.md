@@ -1,0 +1,24 @@
+---
+view::extends: _includes.product_base
+view::yields: product_body
+pageTitle: Amazonite & Seashell jewelry set
+---
+
+# Amazonite & Seashell jewelry set
+
+If you�re a fan of matching jewelry and natural beauty, enjoy the beach vibes of this Amazonite and Seashell jewelry set from Mahberry. 
+Featuring beautiful off-white seashells and natural amazonite gemstone chips, this set consisting of a necklace and a bracelet will
+ definitely be a valuable addition to your treasure chest.
+
+## Materials:
+
+- Natural Amazonite chips.
+- Natural Seashells
+- Strong Elastic thread
+- Silver Stopper Bead
+
+## Size and Details:
+
+One size 
+
+Bracelet and necklace simply slip on

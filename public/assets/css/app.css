@@ -11,15 +11,30 @@ header p {
   font-family: 'Droid Serif', serif;
   font-size: 18px;
 }
+.carousel {
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+  border-bottom: dashed 2px #efefef;
+}
+.carousel-cell {
+  width: 100%;
+  margin-right: 10px;
+  background: #775221;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
 footer {
   padding: 40px;
   background: #f7f5f5;
 }
+footer a:hover {
+  text-decoration: none;
+}
+.imgContainer {
+  background: #c2d3e8;
+}
 .product {
   margin-bottom: 70px;
-}
-.product .imgContainer {
-  background: #c2d3e8;
 }
 .product a {
   color: #775221;
@@ -30,6 +45,26 @@ footer {
 }
 .product a:hover img {
   opacity: 1;
+}
+#innerProduct ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#innerProduct img {
+  opacity: 0.85;
+  width: 100%;
+}
+#innerProduct img:hover {
+  opacity: 1;
+}
+#innerProduct h1 {
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+#innerProduct h2 {
+  margin-top: 30px;
+  font-size: 20px;
 }
 .p-t-5 {
   padding-top: 5px !important;

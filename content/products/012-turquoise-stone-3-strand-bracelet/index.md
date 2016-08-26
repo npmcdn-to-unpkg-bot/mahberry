@@ -1,0 +1,22 @@
+---
+view::extends: _includes.product_base
+view::yields: product_body
+pageTitle: Turquoise Stone Three Strand Rope Bracelet
+---
+
+#  Turquoise Stone Three Strand Rope Bracelet
+
+For those who love the bold and the unique Mahberry presents the Turquoise Stone Three Strand Rope Bracelet. Featuring large turquoise stone beads and warm colored cotton rope in a thick three strand design with an engraved silver metal closure, this bracelet will take your boho style to another level.
+
+## Materials:
+
+- Turquoise Compressed stone beads.
+- Woven cotton Rope
+- Orange silk thread
+
+## Size and Details:
+
+One size - adjustable
+
+Bracelet secured with Silver metal lobster closure
+
