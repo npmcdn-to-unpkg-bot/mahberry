@@ -1,7 +1,7 @@
 @extends('_includes.base')
 
 @section('body')
-    <link rel="stylesheet" href="https://npmcdn.com/flickity@2.0/dist/flickity.css" media="screen">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css" media="screen">
 
     <?php
     $products = (new \Illuminate\Filesystem\Filesystem())->directories(
@@ -45,5 +45,5 @@
         </div>
     </div>
 
-    <script src="https://npmcdn.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
 @stop
